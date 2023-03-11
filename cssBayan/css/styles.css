@@ -1,5 +1,10 @@
+body {
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
 h1 {
-    border-bottom: 0.5px solid #888888;
+    border-bottom: 2px solid #bcbbbb;
 }
 
 h3 {
@@ -23,7 +28,7 @@ h3 {
 
 .accordion-control {
     padding: 20px;
-    border-bottom: 0.5px solid #888888;
+    border-bottom: 2px solid #bcbbbb;
     list-style: none;
     display:flex;
     flex-wrap: wrap;
@@ -36,16 +41,81 @@ h3 {
     padding: 20px;
     /* border: 1px solid #888888; */
     border-top: 1px solid transparent;
+    display: inline-block;
+    overflow: hidden; /* Скрываем всё за контуром */
+    transition: 2s;
 }
+
 
 .plus-solid {
     width: 3%;
+
 }
 
 .accordion[open] .plus-solid {
     transform: rotate(45deg);
+    transition: 0.5s;
 }
 
+.accordion[open] {
+    color:black;
+}
+
+/* ! */
 .copy-paste__logo {
-    width: 50%
+    width: 50%;
+    display: block;
+    transition: 0.5s;
+}
+
+.work-balance__logo {
+
+    display: block;
+    transition: 0.5s;
+}
+
+.where-js__logo {
+
+    display: block;
+    transition: 0.5s;
+}
+
+.relax__logo {
+
+    display: block;
+    transition: 0.5s;
+}
+
+/* ! */
+.copy-paste__logo:active {
+    opacity: 0.50
+}
+
+.work-balance__logo:active {
+    opacity: 0.50
+}
+
+.where-js__logo:active {
+    opacity: 0.50
+}
+
+.relax__logo:active {
+    opacity: 0.50
+}
+
+/* ! */
+.copy-paste__logo:hover {
+    transform: scale(1.1); /* Увеличиваем масштаб */
+}
+
+.work-balance__logo:hover {
+    transform: scale(1.1); /* Увеличиваем масштаб */
+}
+
+.where-js__logo:hover {
+    transform: scale(1.1); /* Увеличиваем масштаб */
+}
+
+.relax__logo:hover {
+    transform: scale(1.1); /* Увеличиваем масштаб */
 }
