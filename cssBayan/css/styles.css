@@ -1,30 +1,113 @@
-body {
+*{
     margin: 0 auto;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+.header {
+    padding:10px;
+}
+
+body {
+    width: 100%;
     padding: 0 15px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
 }
 
 h1 {
     border-bottom: 2px solid #bcbbbb;
 }
 
-h3 {
-    margin: 0px;
-}
-
 .accordion {
     color: #1f36b9;
+    cursor: pointer;
     width: 500px;
     margin-bottom: 10px;
-    cursor: pointer;
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
+}
 
+.accordion-content {
+    /* display: inline-block; */
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid transparent;
+    /* overflow: hidden; */ /* Скрываем всё за контуром */
+    transition: 5s;
+}
+
+.accordion .accordion-content{
+    display: none;
+}
+
+.accordion-control:hover ~ .accordion-content {
+    display: block;
+
+}
+
+
+/* hover появления иконок */
+
+.common:hover .plus-solid__copy-paste{
+    opacity: 1 ;
+}
+.common:hover .plus-solid__work-balance{
+    opacity: 1 ;
+}
+
+.common:hover .plus-solid__where-js{
+    opacity: 1 ;
+}
+
+.common:hover .plus-solid__relax{
+    opacity: 1 ;
 }
 
 .accordion:hover {
-    color:black;
+    color: black;
 
 }
+
+/* смена иконок для интерактивности */
+
+.accordion-control:hover .xmark-solid__copy-paste {
+    display: block;
+}
+
+.accordion-control:hover .plus-solid__copy-paste{
+    display: none;
+}
+
+.accordion-control:hover .xmark-solid__relax {
+    display: block;
+}
+
+.accordion-control:hover .plus-solid__relax {
+    display: none;
+}
+
+.accordion-control:hover .xmark-solid__work-balance {
+    display: block;
+}
+
+.accordion-control:hover .plus-solid__work-balance {
+    display: none;
+}
+
+.accordion-control:hover .xmark-solid__where-js {
+    display: block;
+}
+
+.accordion-control:hover .plus-solid__where-js {
+    display: none;
+}
+
+
 
 .accordion-control {
     padding: 20px;
@@ -36,30 +119,60 @@ h3 {
 
 }
 
-.accordion-content {
-    text-align: center;
-    padding: 20px;
-    /* border: 1px solid #888888; */
-    border-top: 1px solid transparent;
-    display: inline-block;
-    overflow: hidden; /* Скрываем всё за контуром */
-    transition: 2s;
-}
 
-
-.plus-solid {
+.common .plus-solid__copy-paste {
+    opacity: 0;
     width: 3%;
+    padding-left: 100px;
+}
+
+
+/* ! */
+.plus-solid__work-balance {
+    opacity: 0;
+    width: 3%;
+    padding-left: 228px;
+}
+
+.plus-solid__where-js {
+    width: 3%;
+    opacity: 0;
+    padding-left: 225px;
+}
+
+.plus-solid__relax {
+    width: 3%;
+    padding-left: 202px;
+    opacity: 0;
+}
+
+/* ! */
+
+.xmark-solid__work-balance  {
+    display: none;
+    width: 2%;
+    padding-left: 228px;
+}
+
+.xmark-solid__copy-paste {
+    display: none;
+    width: 2.4%;
+    padding-left: 100px;
 
 }
 
-.accordion[open] .plus-solid {
-    transform: rotate(45deg);
-    transition: 0.5s;
+.xmark-solid__where-js {
+    width: 2%;
+    display: none;
+    padding-left: 225px;
 }
 
-.accordion[open] {
-    color:black;
+.xmark-solid__relax {
+    width: 2%;
+    padding-left: 202px;
+    display: none;
 }
+
 
 /* ! */
 .copy-paste__logo {
@@ -104,8 +217,10 @@ h3 {
 }
 
 /* ! */
+
 .copy-paste__logo:hover {
-    transform: scale(1.1); /* Увеличиваем масштаб */
+    border: 3px solid #413f3f; /* Ширина, вид и цвет рамки */
+
 }
 
 .work-balance__logo:hover {
