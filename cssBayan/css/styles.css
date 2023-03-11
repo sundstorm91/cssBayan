@@ -1,6 +1,5 @@
 h1 {
     border-bottom: 0.5px solid #888888;
-
 }
 
 h3 {
@@ -8,20 +7,45 @@ h3 {
 }
 
 .accordion {
+    color: #1f36b9;
     width: 500px;
     margin-bottom: 10px;
-    text-align: center;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.accordion:hover {
+    color:black;
+
 }
 
 .accordion-control {
     padding: 20px;
     border-bottom: 0.5px solid #888888;
     list-style: none;
-    text-align: center;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
 }
 
 .accordion-content {
+    text-align: center;
     padding: 20px;
-    border: 1px solid #888888;
+    /* border: 1px solid #888888; */
     border-top: 1px solid transparent;
+}
+
+.plus-solid {
+    width: 3%;
+}
+
+.accordion[open] .plus-solid {
+    transform: rotate(45deg);
+}
+
+.copy-paste__logo {
+    width: 50%
 }
