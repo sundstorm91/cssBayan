@@ -1,0 +1,27 @@
+h1 {
+    border-bottom: 0.5px solid #888888;
+
+}
+
+h3 {
+    margin: 0px;
+}
+
+.accordion {
+    width: 500px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.accordion-control {
+    padding: 20px;
+    border-bottom: 0.5px solid #888888;
+    list-style: none;
+    text-align: center;
+}
+
+.accordion-content {
+    padding: 20px;
+    border: 1px solid #888888;
+    border-top: 1px solid transparent;
+}
