@@ -30,6 +30,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
+
 }
 
 .accordion-content {
@@ -38,23 +39,29 @@ h1 {
     padding: 20px;
     border-top: 1px solid transparent;
     /* overflow: hidden; */ /* Скрываем всё за контуром */
-    transition: 5s;
+
 }
 
 .accordion .accordion-content{
     display: none;
+    /* opacity: 0;
+    transition: 2s; */
 }
 
-.accordion-control:hover ~ .accordion-content {
+.accordion:hover .accordion-content {
     display: block;
-
+    /* opacity: 1;
+    transition: 2s; */
 }
+
+
 
 
 /* hover появления иконок */
 
 .common:hover .plus-solid__copy-paste{
     opacity: 1 ;
+
 }
 .common:hover .plus-solid__work-balance{
     opacity: 1 ;
@@ -75,35 +82,35 @@ h1 {
 
 /* смена иконок для интерактивности */
 
-.accordion-control:hover .xmark-solid__copy-paste {
+.accordion:hover .xmark-solid__copy-paste {
     display: block;
 }
 
-.accordion-control:hover .plus-solid__copy-paste{
+.accordion:hover .plus-solid__copy-paste{
     display: none;
 }
 
-.accordion-control:hover .xmark-solid__relax {
+.accordion:hover .xmark-solid__relax {
     display: block;
 }
 
-.accordion-control:hover .plus-solid__relax {
+.accordion:hover .plus-solid__relax {
     display: none;
 }
 
-.accordion-control:hover .xmark-solid__work-balance {
+.accordion:hover .xmark-solid__work-balance {
     display: block;
 }
 
-.accordion-control:hover .plus-solid__work-balance {
+.accordion:hover .plus-solid__work-balance {
     display: none;
 }
 
-.accordion-control:hover .xmark-solid__where-js {
+.accordion:hover .xmark-solid__where-js {
     display: block;
 }
 
-.accordion-control:hover .plus-solid__where-js {
+.accordion:hover .plus-solid__where-js {
     display: none;
 }
 
@@ -126,6 +133,9 @@ h1 {
     padding-left: 100px;
 }
 
+.common {
+    width: 700px;
+}
 
 /* ! */
 .plus-solid__work-balance {
@@ -176,13 +186,14 @@ h1 {
 
 /* ! */
 .copy-paste__logo {
-    width: 50%;
+    width: 70%;
     display: block;
     transition: 0.5s;
+
 }
 
 .work-balance__logo {
-
+    width: 120%;
     display: block;
     transition: 0.5s;
 }
@@ -194,12 +205,12 @@ h1 {
 }
 
 .relax__logo {
-
+    width: 120%;
     display: block;
     transition: 0.5s;
 }
 
-/* ! */
+/* Интерактивность при Нажатии */
 .copy-paste__logo:active {
     opacity: 0.50
 }
@@ -216,10 +227,11 @@ h1 {
     opacity: 0.50
 }
 
-/* ! */
+/* интерактивность при выделении */
 
 .copy-paste__logo:hover {
-    border: 3px solid #413f3f; /* Ширина, вид и цвет рамки */
+    transform: scale(1.1); /* Увеличиваем масштаб */
+
 
 }
 
