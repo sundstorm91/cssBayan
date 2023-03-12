@@ -1,0 +1,437 @@
+*{
+     margin: 0 auto;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+.title-acc {
+    font-size: 12px;
+}
+
+.header {
+    padding:10px;
+    margin-bottom: 17px;
+}
+
+body {
+    width: 100%;
+    padding: 0 15px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+}
+
+h1 {
+    border-bottom: 2px solid #bcbbbb;
+
+}
+
+.accordion {
+    color: #1f36b9;
+    cursor: pointer;
+    width: 280px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+.accordion-content {
+
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid transparent;
+
+
+
+
+}
+
+.accordion .accordion-content{
+    display: none;
+
+}
+
+.accordion:hover .accordion-content {
+    display: block;
+
+}
+
+
+
+
+/* hover появления иконок */
+
+.common:hover .plus-solid__copy-paste{
+    opacity: 1 ;
+
+}
+.common:hover .plus-solid__work-balance{
+    opacity: 1 ;
+}
+
+.common:hover .plus-solid__where-js{
+    opacity: 1 ;
+}
+
+.common:hover .plus-solid__relax{
+    opacity: 1 ;
+}
+
+.common:hover .plus-solid__carry{
+    opacity: 1 ;
+}
+
+.accordion:hover {
+    color: black;
+
+}
+
+/* смена иконок для интерактивности */
+
+.accordion:hover .xmark-solid__copy-paste {
+    display: block;
+}
+
+.accordion:hover .plus-solid__copy-paste{
+    display: none;
+}
+
+.accordion:hover .xmark-solid__relax {
+    display: block;
+}
+
+.accordion:hover .plus-solid__relax {
+    display: none;
+}
+
+.accordion:hover .xmark-solid__work-balance {
+    display: block;
+}
+
+.accordion:hover .plus-solid__work-balance {
+    display: none;
+}
+
+.accordion:hover .xmark-solid__where-js {
+    display: block;
+}
+
+.accordion:hover .plus-solid__where-js {
+    display: none;
+}
+
+.accordion:hover .xmark-solid__carry {
+    display: block;
+}
+
+.accordion:hover .plus-solid__carry {
+    display: none;
+}
+
+
+
+.accordion-control {
+    padding: 10px;
+    border-bottom: 2px solid #bcbbbb;
+    list-style: none;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+
+.common .plus-solid__copy-paste {
+    opacity: 0;
+    width: 3%;
+    padding-left: 76px;
+}
+
+.common {
+    min-width: 320px;
+
+}
+
+/* ! */
+.plus-solid__work-balance {
+    opacity: 0;
+    width: 3%;
+    padding-left: 160px;
+}
+
+.plus-solid__where-js {
+    width: 3%;
+    opacity: 0;
+    padding-left: 154px;
+}
+
+.plus-solid__relax {
+    width: 3%;
+    padding-left: 136px;
+    opacity: 0;
+}
+
+/* ! */
+
+.xmark-solid__work-balance  {
+    display: none;
+    width: 2%;
+    padding-left: 160px;
+}
+
+.xmark-solid__copy-paste {
+    display: none;
+    width: 2.4%;
+    padding-left: 76px;
+
+}
+
+.xmark-solid__where-js {
+    width: 2%;
+    display: none;
+    padding-left: 154px;
+}
+
+.xmark-solid__relax {
+    width: 2%;
+    padding-left: 136px;
+    display: none;
+}
+
+.xmark-solid__carry {
+    width: 2%;
+    padding-left: 127px;
+    display: none;
+}
+
+.plus-solid__carry {
+    width: 3%;
+    padding-left: 127px;
+    opacity: 0;
+
+}
+
+
+/* ! */
+.copy-paste__logo {
+    width: 80%;
+    display: block;
+    transition: 0.5s;
+
+}
+
+.work-balance__logo {
+    width: 120%;
+    display: block;
+    transition: 0.5s;
+}
+
+.where-js__logo {
+    width: 80%;
+    display: block;
+    transition: 0.5s;
+}
+
+.relax__logo {
+    width: 120%;
+    display: block;
+    transition: 0.5s;
+}
+
+.carry__logo {
+    display: block;
+    transition: 0.5s;
+    width: 66%;
+}
+
+/* Интерактивность при Нажатии */
+.copy-paste__logo:active {
+    opacity: 0.50
+}
+
+.work-balance__logo:active {
+    opacity: 0.50
+}
+
+.where-js__logo:active {
+    opacity: 0.50
+}
+
+.relax__logo:active {
+    opacity: 0.50
+}
+
+.carry__logo:active {
+    opacity: 0.50
+}
+/* интерактивность при выделении */
+
+.copy-paste__logo:hover {
+    transform: scale(1.1); /* Увеличиваем масштаб */
+
+
+}
+
+.work-balance__logo:hover {
+    transform: scale(1.1); /* Увеличиваем масштаб */
+}
+
+.where-js__logo:hover {
+    transform: scale(1.1); /* Увеличиваем масштаб */
+}
+
+.relax__logo:hover {
+    transform: scale(1.1); /* Увеличиваем масштаб */
+}
+
+.carry__logo:hover {
+    transform: scale(1.1); /* Увеличиваем масштаб */
+}
+
+@media (min-width: 820px) {
+    .common {
+        min-width: 700px;
+    }
+
+    .accordion {
+        width: 450px;
+    }
+
+    .title-acc {
+        font-size: 20px;
+    }
+
+    .xmark-solid__work-balance  {
+        display: none;
+        width: 2%;
+        padding-left: 227px;
+    }
+
+    .xmark-solid__copy-paste {
+        display: none;
+        width: 2.4%;
+        padding-left: 76px;
+
+    }
+
+    .xmark-solid__where-js {
+        width: 2%;
+        display: none;
+        padding-left: 232px;
+    }
+
+    .xmark-solid__relax {
+        width: 2%;
+        padding-left: 210px;
+        display: none;
+    }
+
+    .xmark-solid__carry {
+        width: 2%;
+        padding-left: 160px;
+        display: none;
+    }
+
+    .plus-solid__carry {
+        width: 3%;
+        padding-left: 160px;
+        opacity: 0;
+
+    }
+
+    .plus-solid__work-balance {
+        opacity: 0;
+        width: 3%;
+        padding-left: 227px;
+    }
+
+    .plus-solid__where-js {
+        width: 3%;
+        opacity: 0;
+        padding-left: 232px;
+    }
+
+    .plus-solid__relax {
+        width: 3%;
+        padding-left: 210px;
+        opacity: 0;
+    }
+
+}
+
+@media (min-width: 1920px) {
+    .common {
+        min-width: 780px;
+    }
+
+    .accordion {
+        width: 600px;
+    }
+
+    .title-acc {
+        font-size: 30px;
+    }
+
+    .xmark-solid__work-balance  {
+        display: none;
+        width: 2%;
+        padding-left: 280px;
+    }
+
+    .xmark-solid__copy-paste {
+        display: none;
+        width: 2.4%;
+        padding-left: 76px;
+
+    }
+
+    .xmark-solid__where-js {
+        width: 2%;
+        display: none;
+        padding-left: 232px;
+    }
+
+    .xmark-solid__relax {
+        width: 2%;
+        padding-left: 210px;
+        display: none;
+    }
+
+    .xmark-solid__carry {
+        width: 2%;
+        padding-left: 190px;
+        display: none;
+    }
+
+    .plus-solid__carry {
+        width: 3%;
+        padding-left: 190px;
+        opacity: 0;
+
+    }
+
+    .plus-solid__work-balance {
+        opacity: 0;
+        width: 3%;
+        padding-left: 280px;
+    }
+
+    .plus-solid__where-js {
+        width: 3%;
+        opacity: 0;
+        padding-left: 232px;
+    }
+
+    .plus-solid__relax {
+        width: 3%;
+        padding-left: 210px;
+        opacity: 0;
+    }
+
+}
