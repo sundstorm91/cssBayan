@@ -1,11 +1,12 @@
 *{
-    margin: 0 auto;
+     margin: 0 auto;
     padding: 0;
     box-sizing: content-box;
 }
 
 .header {
     padding:10px;
+    margin-bottom: 17px;
 }
 
 body {
@@ -16,10 +17,12 @@ body {
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
+
 }
 
 h1 {
     border-bottom: 2px solid #bcbbbb;
+
 }
 
 .accordion {
@@ -30,28 +33,27 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
+    margin-bottom: 40px;
 
 }
 
 .accordion-content {
-    /* display: inline-block; */
+
     text-align: center;
     padding: 20px;
     border-top: 1px solid transparent;
-    /* overflow: hidden; */ /* Скрываем всё за контуром */
+
 
 }
 
 .accordion .accordion-content{
     display: none;
-    /* opacity: 0;
-    transition: 2s; */
+
 }
 
 .accordion:hover .accordion-content {
     display: block;
-    /* opacity: 1;
-    transition: 2s; */
+
 }
 
 
@@ -117,7 +119,7 @@ h1 {
 
 
 .accordion-control {
-    padding: 20px;
+    padding: 10px;
     border-bottom: 2px solid #bcbbbb;
     list-style: none;
     display:flex;
@@ -135,6 +137,7 @@ h1 {
 
 .common {
     width: 700px;
+    margin-bottom: 100px;
 }
 
 /* ! */
@@ -186,7 +189,7 @@ h1 {
 
 /* ! */
 .copy-paste__logo {
-    width: 70%;
+    width: 80%;
     display: block;
     transition: 0.5s;
 
@@ -199,7 +202,7 @@ h1 {
 }
 
 .where-js__logo {
-
+    width: 80%;
     display: block;
     transition: 0.5s;
 }
@@ -208,6 +211,12 @@ h1 {
     width: 120%;
     display: block;
     transition: 0.5s;
+}
+
+.carry__logo {
+    display: block;
+    transition: 0.5s;
+    width: 66%;
 }
 
 /* Интерактивность при Нажатии */
@@ -227,6 +236,9 @@ h1 {
     opacity: 0.50
 }
 
+.carry__logo:active {
+    opacity: 0.50
+}
 /* интерактивность при выделении */
 
 .copy-paste__logo:hover {
@@ -246,3 +258,13 @@ h1 {
 .relax__logo:hover {
     transform: scale(1.1); /* Увеличиваем масштаб */
 }
+
+.carry__logo:hover {
+    transform: scale(1.1); /* Увеличиваем масштаб */
+}
+
+/* @media (min-width: 480px) {
+    .common {
+        min-width: ;
+    }
+} */
